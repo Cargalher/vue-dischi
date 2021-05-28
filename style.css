@@ -6,12 +6,13 @@
 body{
     background-color: #1E2D3B;
     /* height: 100vh; */
+    font-family: 'Montserrat', sans-serif;
 }
-.container{
+/* .container{
     width: 1070px;
     height: 100%;
    margin:0 auto;
-}
+} */
 header{
     background-color: #2E3A46;
     width: 100%;
@@ -27,6 +28,7 @@ header img{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding:50px 0;
 }
 .discs_list{
     display: flex;
@@ -36,8 +38,17 @@ header img{
     text-align: center;
     background: #2E3A46;
     padding: 15px;
-    margin: 10px 20px
+    margin: 10px 20px;
+    height: 270px;
+    flex-basis: 147px;
+    
 }
 .discs_list img{
     height: 100px;
+}
+h3{
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin:15px 0;
 }
