@@ -18,7 +18,15 @@
         </header>
 
         <main class="discs_container container">
-
+            <div class="select_genre">
+                <select>
+                    <option value="0">Select genre:</option>
+                    <option value="1">Rock</option>
+                    <option value="2">Pop</option>
+                    <option value="3">Jazz</option>
+                    <option value="4">Metal</option>
+                </select>
+            </div>
             <div class="discs_list" 
             v-for="disk in discs">
                 <img :src="disk.poster" alt="">
