@@ -16,8 +16,11 @@ const app = new Vue ({
                 if(!this.genres.includes(disk.genre)){
                     this.genres.push(disk.genre);
                 }
-                
             });
-        })
+            // bonus 2_Ordinare i dischi per anno di uscita.// order by year of release
+            this.discs.sort(function(oldest, newest){
+                return(oldest.year) - (newest.year);
+            });
+        });
     }
-})
+});
