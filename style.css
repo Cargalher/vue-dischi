@@ -8,11 +8,11 @@ body{
     /* height: 100vh; */
     font-family: 'Montserrat', sans-serif;
 }
-/* .container{
+.container{
     width: 1070px;
     height: 100%;
    margin:0 auto;
-} */
+}
 header{
     background-color: #2E3A46;
     width: 100%;
