@@ -21,6 +21,7 @@
 
             <div class="discs_list" 
             v-for="disk in discs">
+            <img :src="disk.poster" alt="">
             <h2>{{disk.title}}</h2>
             <span class="author">{{disk.author}}</span>
             <span class="year">{{disk.year}}</span>
