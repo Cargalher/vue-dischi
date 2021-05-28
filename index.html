@@ -9,12 +9,25 @@
 </head>
 <body>
     <div id="app">
-        <header>
-            <img src="./img/logo_spoti.png" alt="">
+
+        <header class="site_header">
+            <div class="container">
+                <img src="./img/logo_spoti.png" alt="">
+            </div>
+            
         </header>
-        <main>
-            <div class="discs_list" v-for="disk in discs">{{ discs }}</div>
+
+        <main class="discs_container container">
+
+            <div class="discs_list" 
+            v-for="disk in discs">
+            <h2>{{disk.title}}</h2>
+            <span class="author">{{disk.author}}</span>
+            <span class="year">{{disk.year}}</span>
+            </div>
+
         </main>
+
     </div>
     <!-- VUE JS -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
