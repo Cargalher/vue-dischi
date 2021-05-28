@@ -9,26 +9,27 @@
 </head>
 <body>
     <div id="app">
-
+        <!-- header -->
         <header class="site_header">
             <div class="container">
                 <img src="./img/logo_spoti.png" alt="">
             </div>
-            
-        </header>
 
+        </header>
+        <!-- selector genres -->
+        <div class="select_genre">
+            <select v-model= "selectedGenre">
+                <option value="">Genres</option>
+                <option v-for="genre in genres" :value="genre">
+                    {{ genre }}
+                </option>
+            </select>
+        </div>
+        <!-- container with discs -->
         <main class="discs_container container">
-            <div class="select_genre">
-                <select>
-                    <option value="0">Select genre:</option>
-                    <option value="1">Rock</option>
-                    <option value="2">Pop</option>
-                    <option value="3">Jazz</option>
-                    <option value="4">Metal</option>
-                </select>
-            </div>
+            
             <div class="discs_list" 
-            v-for="disk in discs">
+            v-for="disk in discs" v-if="selectedGenre == disk.genre || selectedGenre == '' ">
                 <img :src="disk.poster" alt="">
                 <h3>{{disk.title}}</h3>
                 <span class="author">{{disk.author}}</span>

@@ -28,7 +28,8 @@ header img{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding:125px 0;
+    
+    padding: 50px 0;;
 }
 .discs_list{
     display: flex;
@@ -59,8 +60,7 @@ h3{
 /* bonus_1 */
 
 .select_genre{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
 }

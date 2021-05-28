@@ -2,7 +2,8 @@ const app = new Vue ({
     el: '#app',
     data:{
         discs: [],
-        genres: []
+        genres: [],
+        selectedGenre: ''
     },
     mounted(){
         axios.get('https://flynn.boolean.careers/exercises/api/array/music')                    //calling ajax
@@ -12,8 +13,10 @@ const app = new Vue ({
             console.log(this.discs);
             //bonus1_ Creare una select con tutti i generi dei dischi. In base a cosa scegliamo nella select, vedremo i corrispondenti cd.
             this.discs.forEach(disk =>{
-                this.genres.push(disk.genre);
-                console.log(genres);
+                if(!this.genres.includes(disk.genre)){
+                    this.genres.push(disk.genre);
+                }
+                
             });
         })
     }
