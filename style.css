@@ -9,9 +9,9 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 .container{
-    width: 1500px;
     height: 100%;
    margin:0 auto;
+   
 }
 header{
     background-color: #2E3A46;
@@ -20,7 +20,7 @@ header{
 }
 header img{
     height: 50px;
-    margin-top: 15px;
+    margin: 15px;
     
 }
 .discs_container{
@@ -42,6 +42,8 @@ header img{
     margin: 10px 20px;
     height: 280px;
     flex-basis: 177px;
+    
+    
     
 }
 .discs_list img{
